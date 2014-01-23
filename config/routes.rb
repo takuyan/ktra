@@ -7,7 +7,7 @@ Ktra::Application.routes.draw do
   resources :iterations do
     resources :tasks
   end
-  root :to => 'tasks#index'
+  root :to => 'pages#index'
   get '/auth/twitter/callback', to: 'sessions#create'
 
   # The priority is based upon order of creation:
